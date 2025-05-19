@@ -7,3 +7,114 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Custom styles
+.feature__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.feature__item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1.5em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature__item:hover {
+  transform: translateY(-5px);
+}
+
+.archive__item-title {
+  margin-top: 0;
+  color: #2a2a2a;
+}
+
+.archive__item-excerpt {
+  margin-top: 1em;
+}
+
+.btn--primary {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn--primary:hover {
+  background-color: #404040;
+  color: #fff;
+  text-decoration: none;
+}
+
+.grid__item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+// Hero section
+.page__hero {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.page__hero--overlay {
+  background-color: rgba(0,0,0,0.5);
+  padding: 3em 0;
+}
+
+.page__hero--overlay .page__title {
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.page__hero--overlay .page__lead {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+// Navigation
+.masthead {
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.greedy-nav {
+  background: #fff;
+}
+
+.greedy-nav a {
+  color: #2a2a2a;
+}
+
+.greedy-nav a:hover {
+  color: #404040;
+}
+
+// Footer
+.page__footer {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 2em 0;
+  margin-top: 3em;
+}
+
+.page__footer a {
+  color: #fff;
+}
+
+.page__footer a:hover {
+  color: #e8e8e8;
+  text-decoration: none;
+}
