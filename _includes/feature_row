@@ -4,6 +4,46 @@
   {% assign feature_row = page.feature_row %}
 {% endif %}
 
+{% if include.type == "left" %}
+<div class="feature__wrapper">
+  <div class="feature__item">
+    <div class="archive__item">
+      <div class="archive__item-body">
+        <h2 class="archive__item-title">Technical Skills</h2>
+        <div class="archive__item-excerpt">
+          <div class="grid__item">
+            <div class="feature__item">
+              <h3>Programming Languages</h3>
+              <p>Python, JavaScript, C++</p>
+            </div>
+            <div class="feature__item">
+              <h3>Machine Learning</h3>
+              <p>PyTorch, TensorFlow, Scikit-learn</p>
+            </div>
+            <div class="feature__item">
+              <h3>Deep Learning</h3>
+              <p>Computer Vision, NLP, Generative AI</p>
+            </div>
+            <div class="feature__item">
+              <h3>Cloud & DevOps</h3>
+              <p>AWS, Docker, CI/CD</p>
+            </div>
+            <div class="feature__item">
+              <h3>Data Processing</h3>
+              <p>MongoDB, RabbitMQ, Vector Databases</p>
+            </div>
+            <div class="feature__item">
+              <h3>Visualization</h3>
+              <p>Matplotlib, Plotly, D3.js</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
 <div class="feature__wrapper">
 
   {% for f in feature_row %}

@@ -2,6 +2,11 @@
 title: "Welcome"
 permalink: /
 author_profile: true
+layout: single
+header:
+  overlay_image: /assets/images/hero.jpg
+  overlay_filter: 0.3
+  caption: "AI/ML Engineer & Researcher"
 ---
 
 ## About Me
@@ -10,7 +15,7 @@ I'm an AI/ML Engineer with a passion for deep learning, computer vision, and res
 
 ## Featured Projects
 
-### Personal AI Twin
+### [Personal AI Twin](https://github.com/Sanyuktatuti/Personal-AI-Twin)
 
 A sophisticated AI system that creates a personalized AI model trained on my digital footprint. The project involves:
 
@@ -20,9 +25,7 @@ A sophisticated AI system that creates a personalized AI model trained on my dig
 - Fine-tuning 8B models using LoRA/QLoRA on AWS SageMaker
 - RAG API + Gradio UI deployment
 
-[View Project →](https://github.com/Sanyuktatuti/Personal-AI-Twin)
-
-### Jailbreaking Deep Models
+### [Jailbreaking Deep Models](https://github.com/Sanyuktatuti/Jailbreaking-Deep-Models)
 
 Research project exploring adversarial attacks on ImageNet classifiers:
 
@@ -30,9 +33,7 @@ Research project exploring adversarial attacks on ImageNet classifiers:
 - Worked with ResNet-34 & DenseNet-121 architectures
 - Comprehensive evaluation and analysis of model robustness
 
-[View Project →](https://github.com/Sanyuktatuti/Jailbreaking-Deep-Models)
-
-### Airspace Congestion Monitoring
+### [Airspace Congestion Monitoring](https://github.com/Sanyuktatuti/airspace-congestion-monitoring)
 
 Python-based system for monitoring and analyzing airspace congestion:
 
@@ -40,9 +41,9 @@ Python-based system for monitoring and analyzing airspace congestion:
 - Visualization of air traffic patterns
 - Predictive analytics for congestion management
 
-[View Project →](https://github.com/Sanyuktatuti/airspace-congestion-monitoring)
-
 ## Skills
+
+{% include feature_row type="left" %}
 
 - **Programming Languages**: Python, JavaScript, C++
 - **Machine Learning**: PyTorch, TensorFlow, Scikit-learn
